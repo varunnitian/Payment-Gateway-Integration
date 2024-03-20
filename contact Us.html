@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.S.P Donations</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        background: url('https://th.bing.com/th/id/R.78edebe88fed97db58c6d785c4338e41?rik=0jVye2JFYPQyng&riu=http%3a%2f%2f10wallpaper.com%2fwallpaper%2f1920x1080%2f1309%2fspots_background_light_dark-Design_HD_wallpaper_1920x1080.jpg&ehk=jWRs9eIhHrZ5e22B3FEIWTCIGKYMGWtQwzJLHVsT%2fLk%3d&risl=&pid=ImgRaw&r=0');
+    }
+    .contact-container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .contact-left-title h2{
+        font-weight: 600;
+        color: #a363aa;
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .contact-left-title hr{
+        border: none;
+        width: 120px;
+        height: 5px;
+        background-color: #a363aa;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .contact-inputs{
+        width: 400px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        font-weight: 500;
+        color: #666;
+        border-radius: 50px;
+    }
+    .contact-left textarea{
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+    .contact-inputs:focus{
+        border: 2px solid #ff994f;
+    }
+    .contact-inputs::placeholder{
+        color: #a9a9a9;
+    }
+    .contact-left button{
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(270deg,#ff994f,#fa6d86);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="contact-container">
+        <form action="" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Enter your name" class="contact-inputs">
+            <input type="email" name="email" placeholder="Enter your Email-ID" class="contact-inputs">
+            <textarea name="message" placeholder="Enter your message here" class="contact-inputs"></textarea>
+            <button type="submit">Submit<img src="./images/assets/arrow_icon.png"></button>
+        </form>
+        <div class="contact-right">
+            <img src="/images/assets/right_img.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

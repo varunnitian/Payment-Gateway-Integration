@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #000;
+    background-image: url('https://th.bing.com/th/id/R.78edebe88fed97db58c6d785c4338e41?rik=0jVye2JFYPQyng&riu=http%3a%2f%2f10wallpaper.com%2fwallpaper%2f1920x1080%2f1309%2fspots_background_light_dark-Design_HD_wallpaper_1920x1080.jpg&ehk=jWRs9eIhHrZ5e22B3FEIWTCIGKYMGWtQwzJLHVsT%2fLk%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+a:hover {
+    color: rgb(222, 46, 81);
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+    font-size: 15px;
+}
+
+#hero {
+    padding: 0 2rem; /* Added padding */
+    height: 80vh; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    gap: 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 2rem; /* Adjusted font size */
+    max-width: 80%; /* Added max-width */
+    margin: 0 auto; /* Centered text */
+}
+
+.action_btn {
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.action_btn:hover {
+    transform: scale(1.05); /* Fixed typo */
+}
+
+.action_btn:active {
+    transform: scale(0.95); /* Fixed typo */
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0;
+    background-color: #000;
+    color: white;
+}
+
+.footer-heart {
+    text-align: center;
+    font-family: open sans, sans-serif;
+}
+
+.footer-heart a {
+    border-bottom: 1px solid #453886;
+    color: #453886;
+    padding-bottom: .25em;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: white;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.emoji {
+    vertical-align: middle;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar .logo a {
+        font-size: 20px;
+    }
+
+    .navbar .links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #hero {
+        padding: 0 1rem; /* Adjusted padding */
+        height: 70vh; /* Adjusted height */
+        gap: 10px;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem; /* Adjusted font size */
+    }
+
+    #hero p {
+        font-size: 1.5rem; /* Adjusted font size */
+    }
+
+    .action_btn {
+        font-size: 1.5rem; /* Adjusted font size */
+        padding: 0.8rem 1.5rem; /* Adjusted padding */
+    }
+}
